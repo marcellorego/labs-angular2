@@ -1,0 +1,24 @@
+<div class="artists">
+    <div class="label">
+        <h1>Artist Directory</h1>
+        <label *ngIf="name">Name: {{name}}</label><br/>
+        <label *ngIf="name" [innerHTML]="'Name: ' + name"></label>
+    </div>
+    <div>
+        <input type="text" #newArtist
+            [(ngModel)]="name"
+            (keyup.enter)="onAddArtist(newArtist.value); newArtist.value=''">
+        <button (click)="onAddArtist(newArtist.value); newArtist.value=''">Add</button>
+    </div>
+</div>
+<ul class="w3-ul w3-card-4">
+    <li class="w3-padding-16" 
+        *ngFor="let item of artists; let i = index"
+        (click)="onCardClick(item, $event)">
+        <span class="w3-closebtn w3-padding w3-margin-right w3-medium"
+            (click)="onCloseClick(item)">x</span>
+        <img src="images/img_avatar{{i}}.png" class="w3-left w3-circle w3-margin-right avatar60">
+        <span class="w3-xlarge">{{item.name}}</span><br>
+        <span>{{item.school}}</span>
+    </li>
+</ul>
