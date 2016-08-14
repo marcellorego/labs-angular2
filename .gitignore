@@ -4,3 +4,6 @@ npm-debug.log
 **/node_modules/*
 **/typings/*
 **/builds/development/js
+
+lesson2/app/*.js
+lesson2/app/*.map
