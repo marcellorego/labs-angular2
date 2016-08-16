@@ -7,3 +7,6 @@ npm-debug.log
 
 lesson2/app/*.js
 lesson2/app/*.map
+
+lesson3/app/*.js
+lesson3/app/*.map
