@@ -5,8 +5,5 @@ npm-debug.log
 **/typings/*
 **/builds/development/js
 
-lesson2/app/*.js
-lesson2/app/*.map
-
-lesson3/app/*.js
-lesson3/app/*.map
+lesson*/app/*.js
+lesson*/app/*.map
