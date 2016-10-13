@@ -2,6 +2,7 @@
 
 let result = (function() {
 
+  let webpack = require('webpack');
   let HtmlWebpackPlugin = require('html-webpack-plugin');
 
   let entry = './src/main.ts';
