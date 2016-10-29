@@ -1,1 +1,2 @@
 $(npm bin)/typings install --global --save dt~core-js
+$(npm bin)/typings install --global --save dt~node
