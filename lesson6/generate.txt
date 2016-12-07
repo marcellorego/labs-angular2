@@ -1,0 +1,4 @@
+npm install -g angular-cli
+ng new "project_name"
+ng generate compoment "compoment_name" --inline-template --inline-style (ng g c "compoment_name" -it -is)
+ng g s "service_name"

@@ -1,2 +1,4 @@
 $(npm bin)/typings install --global --save dt~core-js
 $(npm bin)/typings install --global --save dt~node
+$(npm bin)/typings install --global --save dt~jquery
+$(npm bin)/typings install --global --save dt~bootstrap

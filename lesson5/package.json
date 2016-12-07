@@ -9,7 +9,8 @@
     "build-wp:prod": "webpack -p --progress",
     "postinstall": "typings install",
     "serve": "webpack-dashboard -- webpack-dev-server --inline --port 8080",
-    "lint": "tslint --force \"src/**/*.ts\""
+    "lint": "tslint --force \"src/**/*.ts\"",
+    "build": "rimraf dist && webpack --progress --profile --bail"
   },
   "devDependencies": {
     "html-webpack-plugin": "^2.17.0",
